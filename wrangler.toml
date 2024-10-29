@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "vemex.cn"
+CUSTOM_DOMAIN = "3cz.xyz"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-   { pattern = "docker.vemex.cn", custom_domain = true },
-   { pattern = "quay.vemex.cn", custom_domain = true },
-   { pattern = "gcr.vemex.cn", custom_domain = true },
-   { pattern = "k8s-gcr.vemex.cn", custom_domain = true },
-   { pattern = "k8s.vemex.cn", custom_domain = true },
-   { pattern = "ghcr.vemex.cn", custom_domain = true },
-   { pattern = "cloudsmith.vemex.cn", custom_domain = true },
+   { pattern = "docker.3cz.xyz", custom_domain = true },
+   { pattern = "quay.3cz.xyz", custom_domain = true },
+   { pattern = "gcr.3cz.xyz", custom_domain = true },
+   { pattern = "k8s-gcr.3cz.xyz", custom_domain = true },
+   { pattern = "k8s.3cz.xyz", custom_domain = true },
+   { pattern = "ghcr.3cz.xyz", custom_domain = true },
+   { pattern = "cloudsmith.3cz.xyz", custom_domain = true },
 ]
 
 [env.production.vars]
