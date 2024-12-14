@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "3cz.xyz"
+CUSTOM_DOMAIN = "dev.3cz.xyz"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-   { pattern = "docker.3cz.xyz", custom_domain = true },
-   { pattern = "quay.3cz.xyz", custom_domain = true },
-   { pattern = "gcr.3cz.xyz", custom_domain = true },
-   { pattern = "k8s-gcr.3cz.xyz", custom_domain = true },
-   { pattern = "k8s.3cz.xyz", custom_domain = true },
-   { pattern = "ghcr.3cz.xyz", custom_domain = true },
-   { pattern = "cloudsmith.3cz.xyz", custom_domain = true },
+   { pattern = "docker.dev.3cz.xyz", custom_domain = true },
+   { pattern = "quay.dev.3cz.xyz", custom_domain = true },
+   { pattern = "gcr.dev.3cz.xyz", custom_domain = true },
+   { pattern = "k8s-gcr.dev.3cz.xyz", custom_domain = true },
+   { pattern = "k8s.dev.3cz.xyz", custom_domain = true },
+   { pattern = "ghcr.dev.3cz.xyz", custom_domain = true },
+   { pattern = "cloudsmith.dev.3cz.xyz", custom_domain = true },
 ]
 
 [env.production.vars]
